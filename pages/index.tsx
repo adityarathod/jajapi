@@ -18,10 +18,22 @@ const Home: NextPage = () => {
         <title>jaja generator</title>
       </Head>
 
-      <main className="mx-auto max-w-3xl px-4 pt-8">
-        <h1 className="p-8 w-full text-4xl font-bold text-center">
-          jaja generator
-        </h1>
+      <main className="mx-auto max-w-3xl px-4 pt-16">
+        <div className="flex flex-row items-center mb-8">
+          <div>
+            <h1 className="w-full text-4xl font-bold">jaja generator</h1>
+          </div>
+          <div className="flex-1"></div>
+          <div>
+            <a
+              className="text-md font-bold text-cyan-300 hover:text-cyan-500"
+              href={`/api?times=${count}&prefix=${prefix}`}
+            >
+              api request jaja
+            </a>
+          </div>
+        </div>
+
         <div className="py-1">
           <p className="text-lg mb-2 font-semibold">
             Number of repetitions: {count}
@@ -47,7 +59,7 @@ const Home: NextPage = () => {
           />
         </div>
       </main>
-      <div className="w-full mt-10 py-6 px-10 break-all overflow-scroll text-5xl font-mono">
+      <div className="w-full mt-10 p-2 break-all overflow-scroll text-5xl font-mono">
         {output}
       </div>
     </div>
