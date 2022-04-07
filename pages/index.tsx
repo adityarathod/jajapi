@@ -59,7 +59,7 @@ const Home: NextPage = () => {
           />
         </div>
       </main>
-      <div className="w-full mt-10 p-2 break-all overflow-scroll text-5xl font-mono">
+      <div className="max-w-[1200px] mx-auto w-full mt-10 p-6 break-all overflow-scroll text-5xl font-mono">
         {output}
       </div>
     </div>
